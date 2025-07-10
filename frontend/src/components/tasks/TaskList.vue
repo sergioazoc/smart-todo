@@ -53,11 +53,15 @@ const { tasks, removeTask, toggleTask } = useTask()
   gap: 1rem;
   font-weight: 800;
   font-size: 1.2rem;
-  text-transform: capitalize;
+  text-transform: lowercase;
 
   & svg {
     cursor: pointer;
   }
+}
+
+.task-list-item-content span::first-letter {
+  text-transform: capitalize;
 }
 
 .task-completed {
